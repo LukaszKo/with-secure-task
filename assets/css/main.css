@@ -1,0 +1,11 @@
+:root {
+	--primary-color: rgb(46, 101, 202);
+	--error-color: red;
+	--secondary-color: white;
+	--info-color: #ccc;
+}
+
+.flex {
+	display: flex;
+	gap: 10px;
+}
