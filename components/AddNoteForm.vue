@@ -1,19 +1,19 @@
 <template>
 	<form novalidate>
 		<div class="field">
-			<input placeholder="Add note" v-model="form.title" />
+			<input data-cy="title" placeholder="Add note" v-model="form.title" />
 			<span class="field-error" v-if="hasSubmited && !form.title"
 				>field is required</span
 			>
 		</div>
 		<div class="field">
-			<textarea placeholder="Add content" v-model="form.content" rows="4" />
+			<textarea data-cy="content" placeholder="Add content" v-model="form.content" rows="4" />
 			<span class="field-error" v-if="hasSubmited && !form.content"
 				>field is required</span
 			>
 		</div>
 		<div class="flex">
-			<AppButton class="primary" @click.prevent="save">Save</AppButton>
+			<AppButton data-cy="saveNoteButton" class="primary" @click.prevent="save">Save</AppButton>
 			<AppButton class="outline primary--text" @click.prevent="cancel"
 				>Cancel</AppButton
 			>

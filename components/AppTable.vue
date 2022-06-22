@@ -13,7 +13,7 @@
 		</thead>
 
 		<tbody>
-			<tr v-for="item in items" :key="item.id">
+			<tr v-for="item in items" :key="item.id" :data-cy="item.title">
 				<td v-for="header in headers" :key="header.key">
 					<slot :name="header.key" :item="item">
 						{{ item[header.key] }}

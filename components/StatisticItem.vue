@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<p class="label">{{ label }}</p>
-		<p class="value">{{ value }}</p>
+		<p class="value" :data-cy="label">{{ value }}</p>
 	</div>
 </template>
 <script setup lang="ts">

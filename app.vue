@@ -22,7 +22,7 @@
 			>
 		</AppTable>
 		<div class="add-note-button">
-			<AppButton @click="appDialog.open()">Add</AppButton>
+			<AppButton data-cy="addNoteButton" @click="appDialog.open()">Add</AppButton>
 		</div>
 		<AppDialog ref="appDialog">
 			<p class="dialog-title">Add note</p>
@@ -33,7 +33,7 @@
 				<span>Do you want to delete this note?</span>
 				<div class="flex">
 					<AppButton class="outline" @click="hideAlert">No</AppButton>
-					<AppButton class="secondary" @click="removeSelectedNotes"
+					<AppButton data-cy="removeNoteButton" class="secondary" @click="removeSelectedNotes"
 						>Yes</AppButton
 					>
 				</div>
